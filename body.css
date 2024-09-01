@@ -1,0 +1,104 @@
+body {
+    font-family: Cambria, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: hsla(39, 47%, 66%, 0.551);
+    border: 2px solid #faf8f8;
+    border-radius: 8px;
+    font-size: 2em;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card.flipped {
+    background-color: #e0e0e0;
+    transform: rotateY(180deg);
+}
+
+.control-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#restartButton {
+    background-color: rgb(151, 161, 74);
+    color: white;
+}
+
+#exitButton {
+    background-color: #f44336;
+    color: white;
+}
+
+#restartButton:hover {
+    background-color: #45a049;
+}
+
+#exitButton:hover {
+    background-color: #e57373;
+}
+
+.exit-message {
+    display: none;
+    text-align: center;
+    margin: 20px;
+}
+
+.exit-message img {
+    width: 300px;
+    height: auto;
+}
+
+.exit-message p {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: azure;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg');
+    background-size: cover; /* Ensures the image covers the whole page */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+}
+
+.content {
+    color: rgb(223, 32, 32); /* Makes text readable against the background */
+    text-align: center;
+    padding: 50px;
+}
